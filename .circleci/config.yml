@@ -7,3 +7,4 @@ workflows:
       - docker/publish:
           image: favish/drupal-cron
           update-description: true
+          tag: $CIRCLE_TAG
