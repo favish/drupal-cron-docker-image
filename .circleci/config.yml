@@ -8,3 +8,8 @@ workflows:
           image: favish/drupal-cron
           update-description: true
           tag: $CIRCLE_TAG
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
